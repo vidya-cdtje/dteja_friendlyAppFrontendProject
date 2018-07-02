@@ -1,0 +1,13 @@
+<div class="container" ng-controller="BlogController">
+
+<div ng-repeat="blog in blogData">
+<button data-target="#{{blog.blogId}}" class="btn btn-info" data-toggle="collapse">{{blog.blogName}}</button>
+<button class="btn btn-info" ng-show="blog.status=='NA'" ng-click="approve(blog.blogId)">Approve</button>
+<button class="btn btn-danger" ng-show="blog.status=='A'" ng-click="reject(blog.blogId)">Reject</button>
+  <div id="{{blog.blogId}}" class="collapse">
+    {{blog.blogContent}}
+  </div>
+</div>
+
+
+</div>
