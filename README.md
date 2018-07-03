@@ -1,6 +1,6 @@
 # dteja_friendlyAppFrontendProject
 
-## It's an *Angularjs project*
+## It's an *Angularjs* project
 
 ### Views (*html*):
   1. **User:**
