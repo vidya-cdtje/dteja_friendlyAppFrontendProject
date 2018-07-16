@@ -1,0 +1,19 @@
+<div class="container" ng-controller="FriendController">
+<table class="table" align="center">
+
+<tr bgcolor="#E0FFFF">
+<td colspan="3">Pending Friend Requests</td>
+</tr>
+
+<tr  ng-repeat="friend in showPendingFriendRequests">
+	<td><img  src="http://localhost:8085/Project2Middleware/getImage/{{friend.friendloginname}}"  width="40" height="40"></td>
+	<td>{{friend.friendloginname}}
+    <!-- <span ng-hide="friend.loginname==currentUser.loginname">{{friend.loginname}}</span>
+ 	<span ng-hide="friend.freindloginname==currentUser.loginname">{{friend.friendloginname}}</span> -->
+ 	</td>
+	<td><button class="btn btn-info" ng-click="acceptFriend(friend)">Accept Friend Request</button>
+	<button class="btn btn-danger" ng-click="unFriend(friend)">Delete Friend Request</button></td>
+	</tr>
+</table>
+
+</div>

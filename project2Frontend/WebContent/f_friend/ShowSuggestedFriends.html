@@ -1,0 +1,17 @@
+<div class="container" ng-controller="FriendController">
+
+<table class="table" align="center">
+	
+    <tr bgcolor="#E0FFFF">
+		<td colspan="3">Suggested Friends</td>
+	</tr>
+	<tr ng-repeat="friend in showSuggestedFriends">
+		<td><img  src="http://localhost:8085/Project2Middleware/getImage/{{friend.loginname}}"  width="40" height="40"></td>
+		<td ng-hide="friend.loginname==currentUser.loginname">{{friend.loginname}}</td>
+		<td><button class="btn btn-info" ng-click="sendFriendRequest(friend)">Send Friend Request</button></td>
+	</tr>
+	
+</table>
+
+
+</div>
