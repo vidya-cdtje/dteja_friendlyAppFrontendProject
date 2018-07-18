@@ -75,6 +75,16 @@
 		});
 		
 	}
+	$scope.insertComment=function(){
+		console.log('inserting comment:',$scope.blogComment);
+		$scope.blogComment.loginname=$rootScope.currentUser.loginname;
+		$http.post('http://localhost:8085/project2Middleware/insertComment',$scope.blogComment)
+		.then(function(response){
+			console.log('comment inserted');
+			$location.path('/blogComment');
+		});
+		
+	}
 	
 	showBlog();
 });
