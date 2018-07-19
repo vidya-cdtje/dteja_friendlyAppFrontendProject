@@ -23,7 +23,7 @@
   1. **User controller:**
       - [x] CheckLogin
       - [x] RegisterUser
-      - [ ] ProfileUpload
+      - [x] ProfileUpload
     
   2. **Blog Controller:**
       - [x] Add Blog
@@ -32,7 +32,7 @@
       - [x] Reject Blog
       - [x] Increasing Like
       - [x] Increasing Dislike
-      - [ ] Commenting Blog
+      - [x] Commenting Blog
       
    3. **Friend Controller:**
       - [x] Show Friend List
